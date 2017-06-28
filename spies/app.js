@@ -1,0 +1,9 @@
+// Make sure to use let to allow rewire to work
+let db = require("./db");
+
+module.exports.handleSignup = (email, password) => {
+  // Check if email already exists
+  // Save user to database
+  db.saveUser({ email, password });
+  // Send welcome email
+};
